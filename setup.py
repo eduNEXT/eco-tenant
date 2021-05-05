@@ -89,8 +89,6 @@ setup(
     ],
     include_package_data=True,
     install_requires=load_requirements('requirements/base.in'),
-    extras_require={
-        "sentry": load_requirements('requirements/sentry.in'),
-    },
+    extras_require=load_requirements('requirements/sentry.in'),
     zip_safe=False,
 )

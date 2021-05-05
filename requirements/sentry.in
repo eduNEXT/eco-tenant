@@ -1,3 +1,4 @@
 # Extra requirements
+-c constraints.txt
 
-sentry-sdk==0.20.3        # Pinning sentry-sdk version in order to avoid the usage of a non-compatible version of sentry
+sentry-sdk       # Pinning sentry-sdk version in order to avoid the usage of a non-compatible version of sentry

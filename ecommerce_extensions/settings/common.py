@@ -26,3 +26,11 @@ TIME_ZONE = 'UTC'
 USE_TZ = True
 
 ROOT_URLCONF = 'ecommerce_extensions.urls'
+
+def plugin_settings(settings):
+    """
+    Defines eccomerce-extensions settings when app is used as a plugin to edx-platform.
+    See: https://github.com/edx/edx-platform/blob/master/openedx/core/djangoapps/plugins/README.rst
+    """
+    # Sentry Integration
+    settings.ECOMMERCE_EXTENSIONS_SENTRY_INTEGRATION_DSN = None

@@ -182,6 +182,7 @@ class EdnxPaymentProcessor(BasePaymentProcessor):
 
         if single_seat:
             parameters['description'] = single_seat.course_id
+            parameters['course_name'] = single_seat.course.name
 
         parameters['signature'] = self._generate_signature(parameters, self.PAYMENT_FORM_SIGNATURE)
 
